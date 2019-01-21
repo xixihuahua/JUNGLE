@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlrewrite>
+	    <!-- 特殊字符需转义 -->
+	    <rule>
+	        <from>^/user-([0-9]+).html$</from>
+	        <to>/user.do?method=findUser&amp;visitedUser_id=$1 </to>
+	    </rule>
+	    <rule>
+	        <from>^/article-([0-9]+).html$</from>
+	        <to>/article.do?method=queryArticleByArticleId&amp;article_id=$1</to>
+	    </rule>
+	    <rule>
+	        <from>^/article-topic-([A-Za-z]+)$</from>
+	        <to>/forum.jsp?topic=$1</to>
+	    </rule>
+	   
+	  <!-- 与上方方法相反 -->
+	    
+	  
+		
+	</urlrewrite>
